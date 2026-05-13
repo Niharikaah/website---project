@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeMart - Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/shared.js" defer></script>
+</head>
+<body>
+<section class="page active">
+    <header>
+        <h1>Contact Us</h1>
+        <div class="header-controls">
+            <button onclick="location.href='home.html'">⬅ Back</button>
+        </div>
+    </header>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 900px; margin: 0 auto;">
+        <div class="glass" style="padding: 40px;">
+            <h2 style="color: #fac56f; margin-bottom: 25px; font-size: 22px;">Get In Touch</h2>
+            <div style="margin-bottom: 22px;">
+                <p style="color: rgba(255,255,255,0.4); font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Email</p>
+                <p style="color: #fac56f; font-size: 16px;">support@luxemart.com</p>
+            </div>
+            <div style="margin-bottom: 22px;">
+                <p style="color: rgba(255,255,255,0.4); font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Phone</p>
+                <p style="color: #fac56f; font-size: 16px;">+1 (800) 123-4567</p>
+            </div>
+            <div>
+                <p style="color: rgba(255,255,255,0.4); font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px;">Address</p>
+                <p style="color: rgba(255,255,255,0.85); font-size: 14px; line-height: 1.6;">
+                    123 Luxury Lane<br>
+                    Fashion District, NY 10001<br>
+                    United States
+                </p>
+            </div>
+        </div>
+
+        <div class="glass" style="padding: 40px;">
+            <h2 style="color: #fac56f; margin-bottom: 25px; font-size: 22px;">Send Us a Message</h2>
+            <input type="text" id="contactName" placeholder="Your Name">
+            <input type="email" id="contactEmail" placeholder="Your Email">
+            <textarea id="contactMessage" placeholder="Your Message" style="width: 100%; padding: 14px 16px; margin: 10px 0; border: 1.5px solid rgba(255,215,0,0.2); border-radius: 12px; outline: none; background: rgba(255,255,255,0.06); color: white; font-family: inherit; font-size: 15px; min-height: 120px; resize: vertical; box-sizing: border-box;"></textarea>
+            <button onclick="sendMessage()" style="width: 100%;">Send Message</button>
+        </div>
+    </div>
+</section>
+
+<script>
+function sendMessage() {
+    const name = document.getElementById('contactName').value;
+    const email = document.getElementById('contactEmail').value;
+    const message = document.getElementById('contactMessage').value;
+    if (!name || !email || !message) {
+        alert('Please fill all fields');
+        return;
+    }
+    alert('Thank you ' + name + '! Your message has been received. We will get back to you soon.');
+    document.getElementById('contactName').value = '';
+    document.getElementById('contactEmail').value = '';
+    document.getElementById('contactMessage').value = '';
+}
+</script>
+</body>
+</html>
