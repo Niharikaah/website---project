@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeMart - Premium Shopping Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/shared.js" defer></script>
+</head>
+<body>
+
+<section id="loginPage" class="page active">
+    <div class="form-container glass">
+        <h1>LuxeMart</h1>
+        <p class="tagline">Premium Shopping Experience</p>
+        <h2>Welcome Back</h2>
+
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p>Don't have an account?
+            <span onclick="showLoginPage('signupPage')">Create One</span>
+        </p>
+    </div>
+</section>
+
+<section id="signupPage" class="page">
+    <div class="form-container glass">
+        <h1>LuxeMart</h1>
+        <p class="tagline">Premium Shopping Experience</p>
+        <h2>Create Account</h2>
+
+        <input type="text" id="signupUsername" placeholder="Username">
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+
+        <button onclick="signup()">Create Account</button>
+
+        <p>Already have an account?
+            <span onclick="showLoginPage('loginPage')">Login</span>
+        </p>
+    </div>
+</section>
+
+<script>
+let users = [];
+
+function showLoginPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+}
+
+function loadUsers() {
+    const saved = localStorage.getItem('users');
+    if (saved) users = JSON.parse(saved);
+}
+
+function signup() {
+    const username = document.getElementById('signupUsername').value;
+    const email = document.getElementById('signupEmail').value;
+    const password = document.getElementById('signupPassword').value;
+
+    if (username === '' || email === '' || password === '') {
+        alert('Please fill all fields');
+        return;
+    }
+
+    if (users.find(u => u.username === username)) {
+        alert('Username already exists');
+        return;
+    }
+
+    users.push({ username, email, password });
+    localStorage.setItem('users', JSON.stringify(users));
+
+    alert('Account Created Successfully');
+
+    document.getElementById('signupUsername').value = '';
+    document.getElementById('signupEmail').value = '';
+    document.getElementById('signupPassword').value = '';
+
+    showLoginPage('loginPage');
+}
+
+function login() {
+    const username = document.getElementById('loginUsername').value;
+    const password = document.getElementById('loginPassword').value;
+
+    if (username === '' || password === '') {
+        alert('Please fill all fields');
+        return;
+    }
+
+    const user = users.find(u => u.username === username && u.password === password);
+
+    if (user) {
+        document.getElementById('loginUsername').value = '';
+        document.getElementById('loginPassword').value = '';
+        window.location.href = 'pages/home.html';
+    } else {
+        alert('Invalid Credentials');
+    }
+}
+
+loadUsers();
+</script>
+
+</body>
+</html>

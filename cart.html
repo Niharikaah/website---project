@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeMart - Cart</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/shared.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+</head>
+<body>
+
+<section class="page active">
+
+    <header>
+        <h1>Your Cart 🛒</h1>
+        <button onclick="location.href='home.html'">⬅ Back Home</button>
+    </header>
+
+    <div id="cartItems"></div>
+
+    <div class="summary glass">
+        <h2>Order Summary</h2>
+
+        <p>
+            <span>Subtotal:</span>
+            <span>₹<span id="subtotal">0</span></span>
+        </p>
+        <p>
+            <span>GST (18%):</span>
+            <span>₹<span id="gst">0</span></span>
+        </p>
+        <p>
+            <span>Delivery:</span>
+            <span>₹<span id="delivery">0</span></span>
+        </p>
+
+        <h3>
+            <span>Total:</span>
+            <span>₹<span id="total">0</span></span>
+        </h3>
+
+        <button onclick="proceedPayment()">Proceed To Checkout 💳</button>
+    </div>
+
+</section>
+
+</body>
+</html>
