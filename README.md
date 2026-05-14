@@ -69,12 +69,13 @@ The project focuses on implementing the core functionalities of an online shoppi
 
 ## GitHub Repository
 GitHub repository link :
-[[https://github.com/your-username/your-repository-name](https://github.com/your-username/your-repository-name)](https://niharikaah.github.io/website---project/)
+(https://niharikaah.github.io/website---project/)
 
 ## Screenshots of the Website
 | Page | Preview |
 | :--- | :--- |
-| **Login Page** | ![Login Page Screenshot](Add_link_here) |
+| **Login Page** |<img width="472" height="588" alt="image" src="https://github.com/user-attachments/assets/df3cec79-7166-4419-8662-b078aa546412" />
+|
 | **Home Page** | ![Home Page Screenshot](Add_link_here) |
 | **Products Page** | ![Products Page Screenshot](Add_link_here) |
 | **Cart Page** | ![Cart Page Screenshot](Add_link_here) |
