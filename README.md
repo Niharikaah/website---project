@@ -74,7 +74,7 @@ GitHub repository link :
 ## Screenshots of the Website
 | Page | Preview |
 | :--- | :--- |
-| **Login Page** |<img width="472" height="588" alt="image" src="https://github.com/user-attachments/assets/df3cec79-7166-4419-8662-b078aa546412" />
+| **Login Page** |<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/df3cec79-7166-4419-8662-b078aa546412" />
 |
 | **Home Page** | ![Home Page Screenshot](Add_link_here) |
 | **Products Page** | ![Products Page Screenshot](Add_link_here) |
