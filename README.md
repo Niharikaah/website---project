@@ -72,16 +72,15 @@ GitHub repository link :
 (https://niharikaah.github.io/website---project/)
 
 ## Screenshots of the Website
+## Screenshots of the Website
 | Page | Preview |
-| :--- | :--- |
-| **Login Page** |<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/df3cec79-7166-4419-8662-b078aa546412" />
-|
-| **Home Page** | ![Home Page Screenshot](Add_link_here) |
-| **Products Page** | ![Products Page Screenshot](Add_link_here) |
-| **Cart Page** | ![Cart Page Screenshot](Add_link_here) |
-| **Payment Page** | ![Payment Page Screenshot](Add_link_here) |
-| **Receipt Page** | ![Receipt Page Screenshot](Add_link_here) |
-
+| :---: | :---: |
+| **Login Page** |<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/df3cec79-7166-4419-8662-b078aa546412" /> |
+| **Home Page** |<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/d244cd0c-f2aa-40a5-bd82-c311785a5816" /> |
+| **Products Page** |<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/59aefcdd-7159-47ab-a690-35eccaa9a61d" /> |
+| **Cart Page** |<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/a13e2c43-88f5-4338-8e13-f1bd4dca4a81" /> |
+| **Payment Page** |<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e46ed11b-8b74-4eb0-9770-904dd3092cdf" /> |
+| **Receipt Page** |<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/73420895-66de-4669-a187-a2d066a74cc1" /> |
 ## Future Improvements
 * **Backend Integration:** Moving from local storage to a live server environment.
 * **Database Support:** Implementing a database for persistent user and product data.
